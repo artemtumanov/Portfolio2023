@@ -1,0 +1,40 @@
+.button {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    width: 130px;
+    height: 45px;
+    padding: 12px 25px;
+    text-decoration: none;
+    position: relative;
+    transition: 1s ease-in-out;
+    text-align: center;
+    &__active {
+        background-color: $main-color;
+    }
+    &__about {
+        width: 120px;
+    }
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 150 480;
+        stroke-dashoffset: 150;
+        transition: 1s ease-in-out;
+      }
+    &:hover {
+        transition: 1s ease-in-out;
+        background: #FFA501;
+        svg {
+            stroke-dashoffset: -480;
+        }
+        span {
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}

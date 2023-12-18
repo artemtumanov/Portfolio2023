@@ -1,0 +1,67 @@
+.social-side {
+    position: fixed;
+    min-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: rotate(-90deg) scale(1.02);
+    top: 370px;
+    left: -150px;
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__divider {
+        width: 70px;
+        height: 2px;
+        background-color: #FFF;
+    }
+    &__link {
+        text-decoration: none;
+        span {
+            display: block;
+            color: #FFF;
+            font-size: 20px;
+        }
+    }
+    #vk {
+        &:hover {
+            span {
+                transition: 0.5s all;
+                color: #0077ff;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    #telegram {
+        &:hover {
+            span {
+                transition: 0.5s all;
+                color: #3bafe3;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    #github {
+        &:hover {
+            span {
+                transition: 0.5s all;
+                color: #736ff5;
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    #insta {
+        &:hover {
+            span {
+                transition: 0.5s all;
+                color: #fa087f;
+                transform: scale(1.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.promo {
+    min-height: 100vh;
+    background: url(../img/promo/Background.png) no-repeat 50%/cover;
+    padding-top: 200px;
+    &__links {
+        margin-top: 33px;
+        width: 285px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__subtitle {
+        position: relative;
+        @include before_round;
+        padding-left: 10px;
+        z-index: 2;
+    }
+}
