@@ -2,7 +2,11 @@
     color: #FFF;
     font-size: 16px;
     font-weight: 700;
-    z-index: 2;
+    position: relative;
+    span {
+        position: relative;
+        z-index: 2;
+    }
     &_fs48px {
         font-size: 48px;
         line-height: 60px;

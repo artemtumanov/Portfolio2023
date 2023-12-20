@@ -7,6 +7,10 @@
     h1, h2, h3 {
         margin: 0;
     };
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 };
 
 @import 'base/variables';
@@ -14,9 +18,12 @@
 @import 'base/fonts.scss';
 
 @import 'blocks/container';
+@import 'blocks/burger';
+@import 'blocks/menu';
+@import 'blocks/social-side';
 @import 'blocks/promo';
 @import 'blocks/title';
+@import 'blocks/divider';
 @import 'blocks/buttons';
-@import 'blocks/social-side';
-@import 'blocks/burger';
 @import 'blocks/about';
+@import 'blocks/exp';

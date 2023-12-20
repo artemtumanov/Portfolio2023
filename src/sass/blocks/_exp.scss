@@ -1,0 +1,101 @@
+.exp {
+    padding-top: 120px;
+    background-color: $background-color;
+    &__title {
+        text-align: center;
+        @include before_round;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 44px;
+        column-gap: 120px;
+        margin-top: 60px;
+    }
+    &__column {
+        padding-left: 50px;
+        ul {
+            list-style-type: none;
+        }
+        &-item {
+            padding-top: 45px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: calc(100% + 4px);
+                background-color: #FFF;
+                top: -7px;
+                left: -43px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                width: 42px;
+                height: 1px;
+                background-color: #FFF;
+                top: 67px;
+                left: -42px;
+            }
+        }
+        &-title {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 700;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -50px;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
+        &-head {
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            @include before_round;
+            &:before {
+                top: 4px;
+            }
+        }
+        &-header {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        &-subheader, &-text {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        &-text {
+            width: 375px;
+            margin-top: 12px;
+        }
+        &-icon {
+            z-index: 2;
+            width: 36px;
+            margin-right: 20px;
+            img {
+                position: relative;
+                top: 16px;
+                left: 17px;
+            }
+        }
+    }
+}
