@@ -101,9 +101,25 @@
             padding: 20px;
         }
     }
+    &__trigger {
+        grid-column: 1 / 3;
+        display: flex;
+    }
     &__button {
         background-color: $main-color;
         border: none;
         width: 220px;
+    }
+    &__policy {
+        margin-left: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            margin-left: 10px;
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 500;
+        }
     }
 }

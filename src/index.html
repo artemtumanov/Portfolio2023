@@ -455,24 +455,30 @@
                     <div class="contacts__text">Или оставьте ваши данные и я сам Вам напишу:</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="textarea" id="textarea"></textarea>
                             <label for="textarea">Ваше сообщение</label>
                         </div>
-                        <button class="contacts__button button">
-                            <svg width="220px" height="45px" viewBox="0 0 220 45" class="border">
-                                <polyline points="219,1 219,44 1,44 1,1 219,1"/>
-                                <polyline points="219,1 219,44 1,44 1,1 219,1"/>
-                              </svg>
-                            <span>Отправить сообщение</span>
-                        </button>
+                        <div class="contacts__trigger">
+                            <button class="contacts__button button">
+                                <svg width="220px" height="45px" viewBox="0 0 220 45" class="border">
+                                    <polyline points="219,1 219,44 1,44 1,1 219,1"/>
+                                    <polyline points="219,1 219,44 1,44 1,1 219,1"/>
+                                  </svg>
+                                <span>Отправить сообщение</span>
+                            </button>
+                            <div class="contacts__policy">
+                                <input type="checkbox" name="checkbox" required>
+                                <span>Я согласен(а) <a target="_blank" href="/privacy.html">с политикой конфиденциальности</a> </span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
