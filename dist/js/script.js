@@ -15,3 +15,10 @@ function closeMenu (i) {
 
 closeMenu(closeElem);
 closeMenu(overlay);
+
+const procents = document.querySelectorAll('.progress__procent')
+      lines = document.querySelectorAll('.progress__subline');
+
+procents.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+})

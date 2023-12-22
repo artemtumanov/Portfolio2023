@@ -1,17 +1,6 @@
 .exp {
     padding-top: 120px;
     background-color: $background-color;
-    &__title {
-        text-align: center;
-        @include before_round;
-        &:before {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -66,11 +55,6 @@
         &-head {
             display: flex;
             justify-content: flex-start;
-            position: relative;
-            @include before_round;
-            &:before {
-                top: 4px;
-            }
         }
         &-header {
             color: #FFF;
@@ -91,10 +75,15 @@
             z-index: 2;
             width: 36px;
             margin-right: 20px;
+            position: relative;
             img {
                 position: relative;
                 top: 16px;
                 left: 17px;
+            }
+            @include before_round;
+            &:before {
+                top: 4px;
             }
         }
     }

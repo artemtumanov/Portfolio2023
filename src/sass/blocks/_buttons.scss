@@ -21,7 +21,7 @@
         top: 0;
         fill: none;
         stroke: #fff;
-        stroke-dasharray: 150 480;
+        stroke-dasharray: 150 550;
         stroke-dashoffset: 150;
         transition: 1s ease-in-out;
       }
@@ -29,7 +29,7 @@
         transition: 1s ease-in-out;
         background: #FFA501;
         svg {
-            stroke-dashoffset: -480;
+            stroke-dashoffset: -550;
         }
         span {
             color: white;

@@ -35,14 +35,14 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+    }
+    &__specialty-icon {
+        position: relative;
+        z-index: 0;
         @include before_round;
         &:before {
             top: 0;
         }
-    }
-    &__specialty-icon {
-        position: relative;
-        z-index: 2;
         img {
             position: absolute;
             top: 15px;
