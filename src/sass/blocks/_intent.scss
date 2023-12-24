@@ -1,0 +1,15 @@
+.intent {
+    display: grid;
+    grid-template: repeat(5, minmax(50px, auto)) / repeat(2, 500px);
+    margin-top: 20px;
+    justify-content: center;
+    &__item {
+        padding: 5px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+    }
+}
+
+#personal-data {
+    grid-row: 2 / 4;
+}
